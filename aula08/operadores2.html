@@ -7,5 +7,87 @@
 </head>
 <body>
     <h1>Operadores: Relacionais, Lógicos e Ternários</h1>
+    <h2>Operadores Relacionais </h2>
+    <h3>==  | Igualdade (mesmo valor)</h3>
+    <h3>!=  | Diferença (valores diferentes)</h3>
+    <h3>=== | Igualdade Estrita (mesmo valor e tipo de variável)</h3>
+    <h3>!== | Diferença Estrita (valores diferentes ou tipos diferentes)</h3>
+    <h3><  | Menor que</h3>
+    <h3>>  | Maior que</h3>
+    <h3><=  | Menor ou igual a</h3>
+    <h3>>=  | Maior ou igual a</h3>
+    <h3>in  | Verifica se a propriedade existe no objeto</h3>
+    <h4>Observação: o resultado é sempre um booleano: True ou False</h4>
+
+    <h2>Operadores Lógicos </h2>
+    <h3> && | E lógico</h3>
+    <h3> || | Ou lógico</h3>
+    <h3> ! | Não lógico</h3>
+    <h4>Observação: o resultado é sempre um booleano: True ou False</h4>
+
+    <h2>Operador Ternário</h2>
+    <h3>condição ? valor_se_verdadeiro : valor_se_falso</h3>
+    <h4>Exemplo: let resultado = (a > b) ? "A é maior que B" : "B é maior que A";</h4>
+ 
+
+    <h2>Operador de Coalescência Nula</h2>
+    <h3>?? | Se o valor da esquerda for nulo ou indefinido, retorna o valor da direita</h3>
+    <h4>Exemplo: let resultado = a ?? b;</h4>
+
+
+    <h2>Operador de Atribuição Lógica</h2>
+    <h3>||= | Se o valor da esquerda for falso, atribui o valor da direita</h3>
+    <h4>Exemplo: let resultado = a ||= b;</h4>
+
+
+    <h2>Operador de Atribuição Nula</h2>
+    <h3>??= | Se o valor da esquerda for nulo ou indefinido, atribui o valor da direita</h3>
+    <h4>Exemplo: let resultado = a ??= b;</h4>
+
+
+    <h2>Operador de Atribuição de Desestruturação</h2>
+    <h3>Desestruturação de Objetos: { a, b } = objeto;</h3>
+    <h3>Desestruturação de Arrays: [ a, b ] = array;</h3>
+    <h4>Exemplo: let { a, b } = objeto;</h4>
+    <h4>Exemplo: let [ a, b ] = array;</h4>
+
+    <h2>Operador de Atribuição de Desestruturação com Padrão</h2>
+    <h3>Desestruturação de Objetos: { a = 1, b = 2 } = objeto;</h3>
+    <h3>Desestruturação de Arrays: [ a = 1, b = 2 ] = array;</h3>
+    <h4>Exemplo: let { a = 1, b = 2 } = objeto;</h4>
+    <h4>Exemplo: let [ a = 1, b = 2 ] = array;</h4>
+
+    <h2>Operador de Atribuição de Desestruturação com Padrão e Rest</h2>
+    <h3>Desestruturação de Objetos: { a = 1, b = 2, ...resto } = objeto;</h3>
+    <h3>Desestruturação de Arrays: [ a = 1, b = 2, ...resto ] = array;</h3>
+    <h4>Exemplo: let { a = 1, b = 2, ...resto } = objeto;</h4>  
+    <h4>Exemplo: let [ a = 1, b = 2, ...resto ] = array;</h4>
+    
+
+    <h2>Operador de Atribuição de Desestruturação com Padrão e Rest e Spread</h2>
+    <h3>Desestruturação de Objetos: { a = 1, b = 2, ...resto } = { ...objeto };</h3>
+    <h3>Desestruturação de Arrays: [ a = 1, b = 2, ...resto ] = [ ...array ];</h3>
+    <h4>Exemplo: let { a = 1, b = 2, ...resto } = { ...objeto };</h4>
+    <h4>Exemplo: let [ a = 1, b = 2, ...resto ] = [ ...array ];</h4>
+
+    <h2>Operador de Atribuição de Desestruturação com Padrão e Rest e Spread e Default</h2>
+    <h3>Desestruturação de Objetos: { a = 1, b = 2, ...resto } = { ...objeto, a: 3 };</h3>
+    <h3>Desestruturação de Arrays: [ a = 1, b = 2, ...resto ] = [ ...array, 3 ];</h3>
+    <h4>Exemplo: let { a = 1, b = 2, ...resto } = { ...objeto, a: 3 };</h4>
+    <h4>Exemplo: let [ a = 1, b = 2, ...resto ] = [ ...array, 3 ];</h4>
+
+    <h2>Operador de Atribuição de Desestruturação com Padrão e Rest e Spread e Default e Rest</h2>
+    <h3>Desestruturação de Objetos: { a = 1, b = 2, ...resto } = { ...objeto, a: 3, ...resto };</h3>
+    <h3>Desestruturação de Arrays: [ a = 1, b = 2, ...resto ] = [ ...array, 3, ...resto ];</h3>
+    <h4>Exemplo: let { a = 1, b = 2, ...resto } = { ...objeto, a: 3, ...resto };</h4>
+    <h4>Exemplo: let [ a = 1, b = 2, ...resto ] = [ ...array, 3, ...resto ];</h4>
+
+
+
+
+
+
+
+
 </body>
 </html>
