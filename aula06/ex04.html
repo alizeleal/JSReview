@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Qual é o seu nome?")
+        let salario = parseFloat(prompt("Qual é o seu salário?"))
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras!`)
+        document.write("<br>")
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        document.write("<br>")
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)         
+        document.write("<br>")
+        document.write(`Seu salário é ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
+        let i = 0
+        for (i in nome) {
+            document.write("<br>")
+            document.write(`A letra ${i} do seu nome é ${nome.charAt(i)}`)
+        }
+    </script>
+</body>
+</html>
