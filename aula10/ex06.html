@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            width: 200px;
+            height: 200px;
+            background-color: #d6a9a9;
+            color: #333;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Clique aqui</div>
+    <script>
+        const area = document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseover', passar);
+        area.addEventListener('mouseout', sair);
+        function clicar() {
+            // Altera o conteúdo do elemento para "Você clicou!"    
+            area.innerText = 'Você clicou!';}
+            area.style.color = 'white';
+
+        function passar() {
+            // Altera a cor de fundo do elemento para azul
+            area.style.backgroundColor = 'blue';
+            // Altera a cor do texto para branco
+            area.style.color = 'white';}
+        function sair(){
+            // Altera a cor de fundo do elemento para rosa
+            area.style.backgroundColor = '#d6a9f5'
+            // Altera a cor do texto para preto
+            area.style.color = '#333';
+        }
+        </script>
+</body>
+</html>

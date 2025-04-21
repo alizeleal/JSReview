@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de DOM</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #e7dede;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+         }
+    </style>
 </head>
 <body>
-    
+    <h1>Resultados</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="div1">Clique em mim</div>
+
+    <script>
+        // Seleciona o elemento com id "div1"
+        window.document.write('<h2>Exercício 5</h2>');
+        window.document.write('<p>Adicione um evento de clique a um elemento e altere seu conteúdo e estilo.</p>');
+        const div1 = document.getElementById('div1');
+
+        // Adiciona um evento de clique ao elemento
+        div1.addEventListener('click', function() {
+            // Altera o conteúdo do elemento para "Você clicou!"
+            div1.textContent = 'Você clicou!';
+            // Altera a cor de fundo do elemento para azul
+            div1.style.backgroundColor = 'blue';
+            // Altera a cor do texto para branco
+            div1.style.color = 'white';
+        });
+    </script>
 </body>
 </html>
