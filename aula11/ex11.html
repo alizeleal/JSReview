@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 - Aula 11</title>
+</head>
+<body>
+    <label for="pais">Onde você mora?</label>
+    <input type="text" id="pais" placeholder="Digite o país" />
+    <button id="verificar" onclick="verificar()">Verificar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            let pais = document.getElementById("pais").value;
+            let resultado = document.getElementById("resultado");
+            if (pais.toLowerCase() === "brasil") {
+                resultado.innerHTML = "<h1>Você mora no Brasil!</h1>";
+            } else {
+                resultado.innerHTML = `<h1>Você mora em ${pais}! <br>Lá, você é estrangeiro(a).</h1>`;
+            }
+        }
+    </script>
+</body>
+</html>

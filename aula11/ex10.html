@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 10 - Aula 11</title>
+  </head>
+  <body>
+    <label for="velocidade">velocidade </label>
+    <input type="text" id="velocidade" placeholder="Digite a velocidade" />
+    <button id="verificar" onclick="verificar()">Verificar</button>
+    <div id="resultado"></div>
+
+    <script>      
+      function verificar() {
+        let velocidade = document.getElementById("velocidade").value;
+        let resultado = document.getElementById("resultado");
+        if (velocidade > 80) {
+          let multa = (velocidade - 80) * 5;
+          alert(`Você foi multado em R$ ${multa.toFixed(2)} por excesso de velocidade!`);
+        } else {
+          alert(`Sua velocidade é de ${velocidade} km/h. Você está dentro do limite!`);
+        }
+        resultado.innerHTML = `<h1>Sua velocidade é de ${velocidade} km/h.</h1>`;
+        resultado.innerHTML += `<h1>${velocidade > 80 ? "Você foi multado!" : "Você não foi multado!"}</h1>`;
+      }
+      
+    </script>
+  </body>
+</html>
